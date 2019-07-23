@@ -158,10 +158,10 @@ func (pcs *BaiduPCS) GetRapidUploadInfoByLink(link string, compareRInfo *RapidUp
 		errInfo.Err = err
 		return nil, errInfo
 	}
-	if compareRInfo != nil && compareRInfo.Filename != "" && compareRInfo.Filename != filename {
-		errInfo.Err = ErrGetRapidUploadInfoFilenameNotEqual
-		return nil, errInfo
-	}
+	// if compareRInfo != nil && compareRInfo.Filename != "" && compareRInfo.Filename != filename {
+	// 	errInfo.Err = ErrGetRapidUploadInfoFilenameNotEqual
+	// 	return nil, errInfo
+	// }
 
 	var (
 		contentLength int64
